@@ -1,76 +1,60 @@
+/* Header - Início */
+header {
+    width: 100%;
+    background-color: black;
+    position: fixed;
+}
+
+header nav div ul {
+    margin-bottom: 0;
+}
+
+header ul li {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #9c0000;
+    font-size: x-large;
+}
+
+.iconLogin {
+    display: none;
+}
+
+header img {
+    float: left;
+    margin: 10px;
+}
+
+.menuPrincipal {
+    float: left;
+}
+
+.menuPrincipal ul li {
+    display: inline;
+    margin: 10px;
+}
+
+#menuToggle {
+    display: none;
+}
+
+/* Header - Fim */
+
+/* Body - Início */
 body {
     background-color: rgb(0, 0, 0);
     margin: 0;
     padding: 0;
 }
 
-header nav div ul {
-    margin-top: 35px;
-    margin-bottom: none;
+main {
+    padding-top: 80px;
 }
 
-header ul li a {
-    display: inline-block;
-    text-decoration: none;
-    color: #9c0000;
-    font-size: x-large;
-}
-
-header {
-    height: 80px;
-}
-
-header img {
-    height: 80px;
-    float: left;
-    margin-left: 25px;
-}
-
-.menu-principal {
-    float: left;
-}
-
-.menu-principal ul li {
-    display: inline;
-    margin: 10px;
-}
-
-footer {
-    height: 80px;
-}
-
-.copyright p {
-    text-align: center;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: #9c0000;
-    font-size: 20px;
-    display: inline;
-    margin-left: 270px;
-
-}
-
-.rodape {
-    float: middle;
-}
-
-.rodape ul li {
-    display: inline;
-
-}
-
-.rodape a {
-    text-decoration: none;
-    color: #9c0000;
-    font-size: x-large;
-    margin-left: 30px;
-    margin-bottom: 0;
-}
-
-/* A partir daqui é da página pag-filme */
-
-.banner img {
-    display: block;
-}
 
 .banner button a {
     text-decoration: none;
@@ -105,7 +89,7 @@ footer {
 
 h1 {
     color: #9c0000;
-    margin-left: 15px;
+    margin-left: 20px;
     text-align: left;
     font-size: xx-large;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -115,8 +99,7 @@ h1 {
 
 main section article p {
     color: rgb(197, 190, 188);
-    width: 80%;
-    padding: 15px;
+    width: 100%;
 }
 
 main section article a {
@@ -148,7 +131,9 @@ main section article a:hover {
 
 
 .filmes {
-    margin-left: 25px;
+    margin: 20px;
+    display: inline;
+    max-width: 100%;
 }
 
 footer {
@@ -156,7 +141,89 @@ footer {
     text-align: center;
 }
 
-.filmes:hover{
+.filmes:hover {
     opacity: 0.60;
     transform: scale(1.1);
+}
+
+/* Body - Fim */
+
+/* Footer - Início */
+
+
+.copyright p {
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #9c0000;
+    font-size: 20px;
+    display: inline;
+}
+
+.rodape ul li {
+    display: inline;
+}
+
+.rodape a {
+    text-decoration: none;
+    color: #9c0000;
+    font-size: x-large;
+    margin-left: 15px;
+}
+
+/* Footer - Fim */
+
+/* Media Queries */
+@media screen and (max-width: 500px) and (min-width: 0px) {
+    .banner {
+        text-align: center;
+    }
+
+    .rodape ul {
+        margin: 10px;
+        padding: 0px;
+        display: flex;
+        ;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .rodape ul li {
+        display: block;
+    }
+
+    .menuPrincipal {
+        margin-top: 15px;
+    }
+
+    .banner button {
+        margin: 20px;
+    }
+
+    section article {
+        text-align: center;
+    }
+
+    section article p {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .imgBanner {
+        width: 100%;
+        height: 400px;
+        display: block;
+        object-fit: cover;
+        max-height: 100%;
+    }
+
+    #filmes,
+    #series,
+    #docs {
+        display: none;
+    }
+
+    .iconLogin {
+        display: block;
+    }
+
 }

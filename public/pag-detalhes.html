@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NetFrix</title>
     <link rel="stylesheet" href="style-detalhes.css">
+    <script src="https://kit.fontawesome.com/75f884762c.js" crossorigin="anonymous"></script>
     <meta property="og:title" content="NetFrix" />
     <meta property="og:image" content="/Net.png" />
     <script src="app.js"></script>
@@ -16,20 +17,23 @@
     <header>
         <nav>
             <img src="img\Logo-Net.png" alt="Logo Netfrix" width="70px">
-            <div class="menu-principal">
-                <ul>
-                    <li><a href="index.html">Início</li></a>
-                    <li><a href="#">Filmes</li></a>
-                    <li><a href="#">Séries</li></a>
-                    <li><a href="#">Documentários</li></a>
-                </ul>
+            <div class="menuPrincipal">
+                <div class="menu">
+                    <ul>
+                        <li class="inicio"><a href="index.html">Início</a></li>
+                        <li id="filmes"><a href="#">Filmes</a></li>
+                        <li id="series"><a href="#">Séries</a></li>
+                        <li id="docs"><a href="#">Documentários</a></li>
+                    </ul>
+                </div>
             </div>
+
         </nav>
     </header>
 
     <main>
         <section class="banner">
-            <img src="https://picsum.photos/1920/400" alt="imagem-banner">
+            <img src="https://picsum.photos/1920/400" alt="imagem-banner" class="imgBanner">
             <button><a href="#">Assistir</a></button>
             <button><a href="#">Favoritar</a></button>
         </section>
@@ -38,7 +42,7 @@
 
         <section>
             <article>
-                <h1>Título do Filme</h1>
+                <h1 class="titulo">Título do Filme</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur nulla magni commodi ut, nemo hic
                     quam cum est adipisci quibusdam animi numquam facere officia voluptatum? Deleniti, in fuga molestias
                     non illum unde dolores fugiat ipsam minus vel totam voluptate quisquam magnam tempore sit
@@ -49,13 +53,17 @@
                 <button><a href="#">Compartilhar</a></button>
             </article>
 
-            <article>
+            <article id="vejaTambem">
                 <h1>Veja também</h1>
-                <a href="pag-filme.html" target="blank"><img class="filmes" src="https://picsum.photos/300/250" alt="filme1"></a>
-                <a href="pag-filme.html" target="blank"><img class="filmes" src="https://picsum.photos/300/250" alt="filme2"></a>
-                <a href="pag-filme.html" target="blank"><img class="filmes" src="https://picsum.photos/300/250" alt="filme3"></a>
-                <a href="pag-filme.html" target="blank"><img class="filmes" src="https://picsum.photos/300/250" alt="filme4"></a>
-                <a href="pag-filme.html" target="blank"><img class="filmes" src="https://picsum.photos/300/250" alt="filme5"></a>
+                <a href="pag-filme.html" target="blank"><img class="filmes" src="https://picsum.photos/300/250"
+                        alt="filme1"></a>
+                <a href="pag-filme.html" target="blank"><img class="filmes" src="https://picsum.photos/300/250"
+                        alt="filme2"></a>
+                <a href="pag-filme.html" target="blank"><img class="filmes" src="https://picsum.photos/300/250"
+                        alt="filme3"></a>
+                <a href="pag-filme.html" target="blank"><img class="filmes" src="https://picsum.photos/300/250"
+                        alt="filme4"></a>
+
             </article>
         </section>
     </main>
