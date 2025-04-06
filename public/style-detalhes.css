@@ -1,0 +1,162 @@
+body {
+    background-color: rgb(0, 0, 0);
+    margin: 0;
+    padding: 0;
+}
+
+header nav div ul {
+    margin-top: 35px;
+    margin-bottom: none;
+}
+
+header ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color: #9c0000;
+    font-size: x-large;
+}
+
+header {
+    height: 80px;
+}
+
+header img {
+    height: 80px;
+    float: left;
+    margin-left: 25px;
+}
+
+.menu-principal {
+    float: left;
+}
+
+.menu-principal ul li {
+    display: inline;
+    margin: 10px;
+}
+
+footer {
+    height: 80px;
+}
+
+.copyright p {
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #9c0000;
+    font-size: 20px;
+    display: inline;
+    margin-left: 270px;
+
+}
+
+.rodape {
+    float: middle;
+}
+
+.rodape ul li {
+    display: inline;
+
+}
+
+.rodape a {
+    text-decoration: none;
+    color: #9c0000;
+    font-size: x-large;
+    margin-left: 30px;
+    margin-bottom: 0;
+}
+
+/* A partir daqui é da página pag-filme */
+
+.banner img {
+    display: block;
+}
+
+.banner button a {
+    text-decoration: none;
+    color: #9c0000;
+}
+
+.banner button a:hover {
+    color: white;
+    background-color: #9c0000;
+}
+
+.banner button:hover {
+    border-color: wheat;
+    color: aliceblue;
+    background-color: #9c0000;
+}
+
+
+.banner button {
+    color: #9c0000;
+    width: 130px;
+    height: 40px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    background-color: rgb(168, 164, 164);
+    display: inline-block;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+
+h1 {
+    color: #9c0000;
+    margin-left: 15px;
+    text-align: left;
+    font-size: xx-large;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    display: block;
+}
+
+main section article p {
+    color: rgb(197, 190, 188);
+    width: 80%;
+    padding: 15px;
+}
+
+main section article a {
+    text-decoration: none;
+    color: #9c0000;
+}
+
+main section article button {
+    color: #9c0000;
+    width: 130px;
+    height: 40px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    background-color: rgb(168, 164, 164);
+    display: inline-block;
+    border-radius: 5px;
+    margin-left: 30px;
+    margin-bottom: 25px;
+}
+
+main section article button:hover {
+    background-color: #9c0000;
+    border-color: wheat;
+}
+
+main section article a:hover {
+    color: aliceblue;
+}
+
+
+.filmes {
+    margin-left: 25px;
+}
+
+footer {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.filmes:hover{
+    opacity: 0.60;
+    transform: scale(1.1);
+}
