@@ -74,11 +74,11 @@ const dados = [{
 ]
 
 function carregaFilmes() {
-    const containerDestaque = document.getElementById("destaque");
-    const containerParaVoce = document.getElementById("paraVoce");
+    const Destaque = document.getElementById("destaque");
+    const ParaVoce = document.getElementById("paraVoce");
 
-    containerDestaque.innerHTML = "";
-    containerParaVoce.innerHTML = "";
+    Destaque.innerHTML = "";
+    ParaVoce.innerHTML = "";
 
     const metade = Math.ceil(dados.length / 2);
     const destaque = dados.slice(0, metade);
@@ -102,8 +102,8 @@ function carregaFilmes() {
         return card;
     }
 
-    destaque.forEach(filme => containerDestaque.appendChild(criarCard(filme)));
-    paraVoce.forEach(filme => containerParaVoce.appendChild(criarCard(filme)));
+    destaque.forEach(filme => Destaque.appendChild(criarCard(filme)));
+    paraVoce.forEach(filme => ParaVoce.appendChild(criarCard(filme)));
 }
 
 if (window.location.pathname.includes("index.html") || window.location.pathname === "/" ) {
@@ -119,15 +119,9 @@ function carregaDetalhes() {
 
     const filme = dados.find(item => item.id === id);
 
-    if (!filme) {
-        console.error("Filme não encontrado!");
-        return;
-    }
-
     document.getElementById("titulo").textContent = filme.titulo;
     document.getElementById("descricao").textContent = filme.descricao;
     document.getElementById("banner").src = "img/" + filme.banner;
-    document.getElementById("banner").alt = filme.titulo + " - banner";
-    document.getElementById("genero").textContent = filme.genero || "Gênero não informado";
-    document.getElementById("diretor").textContent = filme.diretor || "Diretor não informado";
+    document.getElementById("genero").textContent = filme.genero;
+    document.getElementById("diretor").textContent = filme.diretor;
 }

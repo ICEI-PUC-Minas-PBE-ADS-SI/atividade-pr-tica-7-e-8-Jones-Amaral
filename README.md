@@ -24,4 +24,6 @@ Leia o enunciado completo no Canvas.
 
 ## Print da versão responsiva com Bootstrap
 
-<<  COLOQUE A IMAGEM AQUI >>
+[Versão Responsiva Detalhes Bootstrap](/img/responsiva-bootstrap-detalhes.png)
+[Versão Responsiva Detalhes Bootstrap Mobile](/img/versao-responsiva-bootstrap-mobile.png)
+

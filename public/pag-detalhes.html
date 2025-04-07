@@ -7,27 +7,64 @@
     <title>NetFrix</title>
     <link rel="stylesheet" href="style-detalhes.css">
     <script src="https://kit.fontawesome.com/75f884762c.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <meta property="og:title" content="NetFrix" />
     <meta property="og:image" content="/Net.png" />
 
 </head>
 
 
-<body>
+<body class="bg-black">
     <header>
-        <nav>
-            <img src="img\Logo-Net.png" alt="Logo Netfrix" width="70px">
-            <div class="menuPrincipal">
-                <div class="menu">
-                    <ul>
-                        <li class="inicio"><a href="index.html">Início</a></li>
-                        <li id="filmes"><a href="#">Filmes</a></li>
-                        <li id="series"><a href="#">Séries</a></li>
-                        <li id="docs"><a href="#">Documentários</a></li>
-                    </ul>
-                </div>
-            </div>
+        <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-black align-left">
+            <div class="container-fluid  bg-black">
+                <a class="navbar-brand" href="index.html"><img src="img/Logo-Net.png" alt="Logo Netfrix"
+                        style="width: 60px;">
+                </a>
 
+
+                <button class="navbar-toggler ms-3" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active text-danger" aria-current="page" href="#">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-danger" href="#">Filmes</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-danger " href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Series
+                            </a>
+                            <ul class="dropdown-menu bg-black text-center">
+                                <li><a class="dropdown-item text-danger" href="#">Ação</a></li>
+                                <li><a class="dropdown-item text-danger" href="#">Aventura</a></li>
+                                <li><a class="dropdown-item text-danger" href="#">Romance</a></li>
+                                <li><a class="dropdown-item text-danger" href="#">Época</a></li>
+                                <li><a class="dropdown-item text-danger" href="#">Comédia</a></li>
+                                <li><a class="dropdown-item text-danger" href="#">Drama</a></li>
+                                <li><a class="dropdown-item text-danger" href="#">Suspense</a></li>
+                                <li><a class="dropdown-item text-danger" href="#">Terror</a></li>
+                                <li><a class="dropdown-item text-danger" href="#">Policiais</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled text-danger" aria-disabled="true">Documentários</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Procure aqui..."
+                            aria-label="Search">
+                        <button type="button" class="btn btn-outline-danger">Procurar</button>
+                    </form>
+                </div>
         </nav>
     </header>
 
@@ -35,20 +72,28 @@
         <section>
             <article>
                 <h1 id="titulo"></h1>
-                <img src="" id="banner" alt="imagem-banner" class="imgBanner">
-                <section class="banner">
-                    <button><a href="#">Assistir</a></button>
-                    <button><a href="#">Favoritar</a></button>
+                <img src="" id="banner" style="height: 400px; width: 100%;;" alt="imagem-banner" class="imgBanner">
+                <section>
+                    <button id="botaoAssistir" type="button"
+                        class="btn btn-secondary text-danger bg-secondary-subtle border border-danger border-2 m-2">Assistir</button>
+                    <button id="botaoFavoritar" type="button"
+                        class="btn btn-secondary text-danger bg-secondary-subtle border border-danger border-2 m-2">Favoritar</button>
                 </section>
                 <div class="desc">
                     <p id="descricao"></p>
                     <p id="genero">Gênero: </p>
                     <p id="diretor">Diretor: </p>
                 </div>
-                <button><a href="#">Trailer</a></button>
-                <button><a href="#">Curtir</a></button>
-                <button><a href="#">Baixar</a></button>
-                <button><a href="#">Compartilhar</a></button>
+                <div>
+                    <button id="botaoTrailer" type="button"
+                        class="btn btn-secondary text-danger bg-secondary-subtle border border-danger border-2 m-2">Trailer</button>
+                    <button id="botaoCurtir" type="button"
+                        class="btn btn-secondary text-danger bg-secondary-subtle border border-danger border-2 m-2">Compartilhar</button>
+                    <button id="botaoBaixar" type="button"
+                        class="btn btn-secondary text-danger bg-secondary-subtle border border-danger border-2 m-2">Baixar</button>
+                    <button id="botaoCompartilhar" type="button"
+                        class="btn btn-secondary text-danger bg-secondary-subtle border border-danger border-2 m-2">+Lista</button>
+                </div>
             </article>
         </section>
     </main>
@@ -72,6 +117,9 @@
     </footer>
 
     <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
