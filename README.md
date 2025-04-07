@@ -19,8 +19,8 @@ Leia o enunciado completo no Canvas.
 
 ## Print da versão responsiva com CSS puro
 
-![Versão Responsiva Home](public/img/responsiva-home.png)
-![Versão Responsiva Detalhes](public/img/responsiva-detalhes.png)
+![Versão Responsiva Home](public/img/responsivo-home.png)
+![Versão Responsiva Detalhes](public/img/responsivo-detalhes.png)
 
 ## Print da versão responsiva com Bootstrap
 
