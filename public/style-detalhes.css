@@ -50,12 +50,17 @@ body {
     margin: 0;
     padding: 0;
 }
-
+.desc{
+    margin-left: 20px;
+}
 main {
     padding-top: 80px;
 }
 
-
+#banner{
+    width: 100%;
+    height: 400px;
+}
 .banner button a {
     text-decoration: none;
     color: #9c0000;
