@@ -103,6 +103,13 @@ h3 {
     padding-left: 10px;
     font-size: 25px;
 }
+.descricao-limitada {
+    display: -webkit-box;
+    -webkit-line-clamp: 10; 
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 
 /* Container Destaque */
 main section p {
