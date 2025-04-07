@@ -19,11 +19,11 @@ Leia o enunciado completo no Canvas.
 
 ## Print da versão responsiva com CSS puro
 
-[Versão Responsiva Home](img/responsiva-home.png)
-[Versão Responsiva Detalhes](img/responsiva-detalhes.png)
+[Versão Responsiva Home](/public/img/responsiva-home.png)
+[Versão Responsiva Detalhes](/public/img/responsiva-detalhes.png)
 
 ## Print da versão responsiva com Bootstrap
 
-[Versão Responsiva Detalhes Bootstrap](/img/responsiva-bootstrap-detalhes.png)
-[Versão Responsiva Detalhes Bootstrap Mobile](/img/versao-responsiva-bootstrap-mobile.png)
+[Versão Responsiva Detalhes Bootstrap](/public/img/responsiva-bootstrap-detalhes.png)
+[Versão Responsiva Detalhes Bootstrap Mobile](/public/img/versao-responsiva-bootstrap-mobile.png)
 
