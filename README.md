@@ -13,7 +13,7 @@ Leia o enunciado completo no Canvas.
 ## Informações Gerais
 
 - Nome: João Vitor Alves Amaral
-- Matricula: 882574
+- Matricula: 882594
 - Proposta de projeto escolhida: Site de Streaming.
 - Breve descrição sobre seu projeto: Criação de um site inspirado em plataforma de Streaming inspirado em uma das maiores plataformas atuais, desta vez fazendo a utilização de java script.
 
