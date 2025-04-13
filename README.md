@@ -18,7 +18,7 @@ Leia o enunciado completo no Canvas.
 - Breve descrição sobre seu projeto: Criação de um site inspirado em plataforma de Streaming inspirado em uma das maiores plataformas atuais, desta vez fazendo a utilização de java script.
 
 ## Print da versão responsiva com CSS puro
-
+![Cards](public/img/cards.png)
 ![Versão Responsiva Home](public/img/responsivo-home.png)
 ![Versão Responsiva Detalhes](public/img/responsivo-detalhes.png)
 
